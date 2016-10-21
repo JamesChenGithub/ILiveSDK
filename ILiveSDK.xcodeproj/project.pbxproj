@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92515C9C1DB71B8C007B24E5 /* TCAVIMMIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92515C9B1DB71B8C007B24E5 /* TCAVIMMIManager.m */; };
+		92AF3E201DACD0240013EC7E /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF3E161DACD0240013EC7E /* QAVSDK.framework */; };
+		92AF3E211DACD0240013EC7E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 92AF3E171DACD0240013EC7E /* README.md */; };
+		92AF3E221DACD0240013EC7E /* xplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF3E181DACD0240013EC7E /* xplatform.framework */; };
+		92AF3E231DACD0240013EC7E /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF3E1A1DACD0240013EC7E /* IMCore.framework */; };
+		92AF3E241DACD0240013EC7E /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF3E1B1DACD0240013EC7E /* ImSDK.framework */; };
+		92AF3E251DACD0240013EC7E /* IMSDKBugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF3E1C1DACD0240013EC7E /* IMSDKBugly.framework */; };
+		92AF3E261DACD0240013EC7E /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF3E1D1DACD0240013EC7E /* QALSDK.framework */; };
+		92AF3E271DACD0240013EC7E /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AF3E1F1DACD0240013EC7E /* TLSSDK.framework */; };
+		92B0ECF51DAB6CA4001BA2F8 /* AVFrameDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECB71DAB6CA4001BA2F8 /* AVFrameDispatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECF61DAB6CA4001BA2F8 /* AVGLBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECB81DAB6CA4001BA2F8 /* AVGLBaseView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECF71DAB6CA4001BA2F8 /* AVGLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECB91DAB6CA4001BA2F8 /* AVGLCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECF81DAB6CA4001BA2F8 /* AVGLCustomRenderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECBA1DAB6CA4001BA2F8 /* AVGLCustomRenderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECF91DAB6CA4001BA2F8 /* AVGLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECBB1DAB6CA4001BA2F8 /* AVGLImage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECFA1DAB6CA4001BA2F8 /* AVGLRenderView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECBC1DAB6CA4001BA2F8 /* AVGLRenderView+Animation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECFB1DAB6CA4001BA2F8 /* AVGLRenderView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECBD1DAB6CA4001BA2F8 /* AVGLRenderView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECFC1DAB6CA4001BA2F8 /* AVGLShareInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECBE1DAB6CA4001BA2F8 /* AVGLShareInstance.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ECFD1DAB6CA4001BA2F8 /* TCAVFrameDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECBF1DAB6CA4001BA2F8 /* TCAVFrameDispatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		92B0ED061DAB6CA4001BA2F8 /* TCAVSharedContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECE61DAB6CA4001BA2F8 /* TCAVSharedContext.m */; };
+		92B0ED071DAB6CA4001BA2F8 /* TCICallCMD.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECE71DAB6CA4001BA2F8 /* TCICallCMD.m */; };
+		92B0ED081DAB6CA4001BA2F8 /* TCICallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECE81DAB6CA4001BA2F8 /* TCICallManager.m */; };
+		92B0ED091DAB6CA4001BA2F8 /* TCILAVIMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECEA1DAB6CA4001BA2F8 /* TCILAVIMCache.m */; };
+		92B0ED0A1DAB6CA4001BA2F8 /* TCILAVIMRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECEB1DAB6CA4001BA2F8 /* TCILAVIMRunloop.m */; };
+		92B0ED0B1DAB6CA4001BA2F8 /* TCILiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECEC1DAB6CA4001BA2F8 /* TCILiveManager.m */; };
+		92B0ED0C1DAB6CA4001BA2F8 /* TCILiveMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECED1DAB6CA4001BA2F8 /* TCILiveMsg.m */; };
+		92B0ED0D1DAB6CA4001BA2F8 /* TCILiveMsgHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECEE1DAB6CA4001BA2F8 /* TCILiveMsgHandler.m */; };
+		92B0ED0E1DAB6CA4001BA2F8 /* TCILivePushRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECF01DAB6CA4001BA2F8 /* TCILivePushRequest.m */; };
+		92B0ED0F1DAB6CA4001BA2F8 /* TCILiveRecordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECF21DAB6CA4001BA2F8 /* TCILiveRecordRequest.m */; };
+		92B0ED101DAB6CA4001BA2F8 /* TCILiveRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECF31DAB6CA4001BA2F8 /* TCILiveRoom.m */; };
+		92B0ED111DAB6CA4001BA2F8 /* TCIMemoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0ECF41DAB6CA4001BA2F8 /* TCIMemoItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92B0ECA81DAB6C6F001BA2F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		92515C9A1DB71B8C007B24E5 /* TCAVIMMIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVIMMIManager.h; sourceTree = "<group>"; };
+		92515C9B1DB71B8C007B24E5 /* TCAVIMMIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVIMMIManager.m; sourceTree = "<group>"; };
+		92796EA01DAE319200FAFA13 /* Shaderf.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shaderf.glsl; sourceTree = "<group>"; };
+		92796EA11DAE319200FAFA13 /* Shaderv.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shaderv.glsl; sourceTree = "<group>"; };
+		92796EA21DAE31A900FAFA13 /* TCILAVIMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILAVIMCache.h; sourceTree = "<group>"; };
+		92AF3E161DACD0240013EC7E /* QAVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDK.framework; sourceTree = "<group>"; };
+		92AF3E171DACD0240013EC7E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		92AF3E181DACD0240013EC7E /* xplatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xplatform.framework; sourceTree = "<group>"; };
+		92AF3E1A1DACD0240013EC7E /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMCore.framework; sourceTree = "<group>"; };
+		92AF3E1B1DACD0240013EC7E /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
+		92AF3E1C1DACD0240013EC7E /* IMSDKBugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSDKBugly.framework; sourceTree = "<group>"; };
+		92AF3E1D1DACD0240013EC7E /* QALSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QALSDK.framework; sourceTree = "<group>"; };
+		92AF3E1E1DACD0240013EC7E /* readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
+		92AF3E1F1DACD0240013EC7E /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
+		92B0ECAA1DAB6C6F001BA2F8 /* libILiveSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libILiveSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B0ECB71DAB6CA4001BA2F8 /* AVFrameDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFrameDispatcher.m; sourceTree = "<group>"; };
+		92B0ECB81DAB6CA4001BA2F8 /* AVGLBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLBaseView.m; sourceTree = "<group>"; };
+		92B0ECB91DAB6CA4001BA2F8 /* AVGLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLCommon.m; sourceTree = "<group>"; };
+		92B0ECBA1DAB6CA4001BA2F8 /* AVGLCustomRenderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLCustomRenderView.m; sourceTree = "<group>"; };
+		92B0ECBB1DAB6CA4001BA2F8 /* AVGLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLImage.m; sourceTree = "<group>"; };
+		92B0ECBC1DAB6CA4001BA2F8 /* AVGLRenderView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVGLRenderView+Animation.m"; sourceTree = "<group>"; };
+		92B0ECBD1DAB6CA4001BA2F8 /* AVGLRenderView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVGLRenderView.mm; sourceTree = "<group>"; };
+		92B0ECBE1DAB6CA4001BA2F8 /* AVGLShareInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGLShareInstance.m; sourceTree = "<group>"; };
+		92B0ECBF1DAB6CA4001BA2F8 /* TCAVFrameDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVFrameDispatcher.m; sourceTree = "<group>"; };
+		92B0ECC11DAB6CA4001BA2F8 /* AVFrameDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFrameDispatcher.h; sourceTree = "<group>"; };
+		92B0ECC21DAB6CA4001BA2F8 /* AVGLBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLBaseView.h; sourceTree = "<group>"; };
+		92B0ECC31DAB6CA4001BA2F8 /* AVGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLCommon.h; sourceTree = "<group>"; };
+		92B0ECC41DAB6CA4001BA2F8 /* AVGLCustomRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLCustomRenderView.h; sourceTree = "<group>"; };
+		92B0ECC51DAB6CA4001BA2F8 /* AVGLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLImage.h; sourceTree = "<group>"; };
+		92B0ECC61DAB6CA4001BA2F8 /* AVGLRenderView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVGLRenderView+Animation.h"; sourceTree = "<group>"; };
+		92B0ECC71DAB6CA4001BA2F8 /* AVGLRenderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLRenderView.h; sourceTree = "<group>"; };
+		92B0ECC81DAB6CA4001BA2F8 /* AVGLShareInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGLShareInstance.h; sourceTree = "<group>"; };
+		92B0ECC91DAB6CA4001BA2F8 /* AVOpenGLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOpenGLHeader.h; sourceTree = "<group>"; };
+		92B0ECCC1DAB6CA4001BA2F8 /* TCAVFrameDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVFrameDispatcher.h; sourceTree = "<group>"; };
+		92B0ECCD1DAB6CA4001BA2F8 /* TCAVSharedContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAVSharedContext.h; sourceTree = "<group>"; };
+		92B0ECCE1DAB6CA4001BA2F8 /* TCICallCMD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCICallCMD.h; sourceTree = "<group>"; };
+		92B0ECD01DAB6CA4001BA2F8 /* TCICallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCICallManager.h; sourceTree = "<group>"; };
+		92B0ECD11DAB6CA4001BA2F8 /* TCILAVIMRunloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILAVIMRunloop.h; sourceTree = "<group>"; };
+		92B0ECD21DAB6CA4001BA2F8 /* TCILiveConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveConst.h; sourceTree = "<group>"; };
+		92B0ECD31DAB6CA4001BA2F8 /* TCILiveHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveHeader.h; sourceTree = "<group>"; };
+		92B0ECD41DAB6CA4001BA2F8 /* TCILiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveManager.h; sourceTree = "<group>"; };
+		92B0ECD51DAB6CA4001BA2F8 /* TCILiveManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveManagerDelegate.h; sourceTree = "<group>"; };
+		92B0ECD61DAB6CA4001BA2F8 /* TCILiveMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveMsg.h; sourceTree = "<group>"; };
+		92B0ECD71DAB6CA4001BA2F8 /* TCILiveMsgHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveMsgHandler.h; sourceTree = "<group>"; };
+		92B0ECD81DAB6CA4001BA2F8 /* TCILiveRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveRoom.h; sourceTree = "<group>"; };
+		92B0ECD91DAB6CA4001BA2F8 /* TCIMemoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCIMemoItem.h; sourceTree = "<group>"; };
+		92B0ECE61DAB6CA4001BA2F8 /* TCAVSharedContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAVSharedContext.m; sourceTree = "<group>"; };
+		92B0ECE71DAB6CA4001BA2F8 /* TCICallCMD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCICallCMD.m; sourceTree = "<group>"; };
+		92B0ECE81DAB6CA4001BA2F8 /* TCICallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCICallManager.m; sourceTree = "<group>"; };
+		92B0ECEA1DAB6CA4001BA2F8 /* TCILAVIMCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILAVIMCache.m; sourceTree = "<group>"; };
+		92B0ECEB1DAB6CA4001BA2F8 /* TCILAVIMRunloop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILAVIMRunloop.m; sourceTree = "<group>"; };
+		92B0ECEC1DAB6CA4001BA2F8 /* TCILiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILiveManager.m; sourceTree = "<group>"; };
+		92B0ECED1DAB6CA4001BA2F8 /* TCILiveMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILiveMsg.m; sourceTree = "<group>"; };
+		92B0ECEE1DAB6CA4001BA2F8 /* TCILiveMsgHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILiveMsgHandler.m; sourceTree = "<group>"; };
+		92B0ECF01DAB6CA4001BA2F8 /* TCILivePushRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILivePushRequest.m; sourceTree = "<group>"; };
+		92B0ECF21DAB6CA4001BA2F8 /* TCILiveRecordRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILiveRecordRequest.m; sourceTree = "<group>"; };
+		92B0ECF31DAB6CA4001BA2F8 /* TCILiveRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCILiveRoom.m; sourceTree = "<group>"; };
+		92B0ECF41DAB6CA4001BA2F8 /* TCIMemoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCIMemoItem.m; sourceTree = "<group>"; };
+		92BDAB1B1DB4A929004C379E /* TCILivePushRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILivePushRequest.h; sourceTree = "<group>"; };
+		92BDAB1C1DB4A929004C379E /* TCILiveRecordRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCILiveRecordRequest.h; sourceTree = "<group>"; };
+		92C7F5271DAB739900112C9E /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		92C7F5401DAB7B7500112C9E /* ILiveSDKVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILiveSDKVersion.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92B0ECA71DAB6C6F001BA2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92AF3E261DACD0240013EC7E /* QALSDK.framework in Frameworks */,
+				92AF3E221DACD0240013EC7E /* xplatform.framework in Frameworks */,
+				92AF3E231DACD0240013EC7E /* IMCore.framework in Frameworks */,
+				92AF3E251DACD0240013EC7E /* IMSDKBugly.framework in Frameworks */,
+				92AF3E201DACD0240013EC7E /* QAVSDK.framework in Frameworks */,
+				92AF3E241DACD0240013EC7E /* ImSDK.framework in Frameworks */,
+				92AF3E271DACD0240013EC7E /* TLSSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92AF3E141DACD0240013EC7E /* TCAVIMSDKS */ = {
+			isa = PBXGroup;
+			children = (
+				92796EA01DAE319200FAFA13 /* Shaderf.glsl */,
+				92796EA11DAE319200FAFA13 /* Shaderv.glsl */,
+				92AF3E151DACD0240013EC7E /* AVSDK */,
+				92AF3E191DACD0240013EC7E /* IMSDK */,
+			);
+			path = TCAVIMSDKS;
+			sourceTree = "<group>";
+		};
+		92AF3E151DACD0240013EC7E /* AVSDK */ = {
+			isa = PBXGroup;
+			children = (
+				92AF3E161DACD0240013EC7E /* QAVSDK.framework */,
+				92AF3E181DACD0240013EC7E /* xplatform.framework */,
+				92AF3E171DACD0240013EC7E /* README.md */,
+			);
+			path = AVSDK;
+			sourceTree = "<group>";
+		};
+		92AF3E191DACD0240013EC7E /* IMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				92AF3E1A1DACD0240013EC7E /* IMCore.framework */,
+				92AF3E1B1DACD0240013EC7E /* ImSDK.framework */,
+				92AF3E1C1DACD0240013EC7E /* IMSDKBugly.framework */,
+				92AF3E1D1DACD0240013EC7E /* QALSDK.framework */,
+				92AF3E1F1DACD0240013EC7E /* TLSSDK.framework */,
+				92AF3E1E1DACD0240013EC7E /* readme */,
+			);
+			path = IMSDK;
+			sourceTree = "<group>";
+		};
+		92B0ECA11DAB6C6F001BA2F8 = {
+			isa = PBXGroup;
+			children = (
+				92AF3E141DACD0240013EC7E /* TCAVIMSDKS */,
+				92C7F5271DAB739900112C9E /* build.sh */,
+				92B0ECAC1DAB6C6F001BA2F8 /* ILiveSDK */,
+				92B0ECAB1DAB6C6F001BA2F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92B0ECAB1DAB6C6F001BA2F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92B0ECAA1DAB6C6F001BA2F8 /* libILiveSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92B0ECAC1DAB6C6F001BA2F8 /* ILiveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				92B0ECB61DAB6CA4001BA2F8 /* AVOpenGL */,
+				92B0ECC01DAB6CA4001BA2F8 /* include */,
+				92B0ECE61DAB6CA4001BA2F8 /* TCAVSharedContext.m */,
+				92B0ECE71DAB6CA4001BA2F8 /* TCICallCMD.m */,
+				92B0ECE81DAB6CA4001BA2F8 /* TCICallManager.m */,
+				92B0ECEA1DAB6CA4001BA2F8 /* TCILAVIMCache.m */,
+				92B0ECEB1DAB6CA4001BA2F8 /* TCILAVIMRunloop.m */,
+				92B0ECEC1DAB6CA4001BA2F8 /* TCILiveManager.m */,
+				92B0ECED1DAB6CA4001BA2F8 /* TCILiveMsg.m */,
+				92B0ECEE1DAB6CA4001BA2F8 /* TCILiveMsgHandler.m */,
+				92B0ECF01DAB6CA4001BA2F8 /* TCILivePushRequest.m */,
+				92B0ECF21DAB6CA4001BA2F8 /* TCILiveRecordRequest.m */,
+				92B0ECF31DAB6CA4001BA2F8 /* TCILiveRoom.m */,
+				92B0ECF41DAB6CA4001BA2F8 /* TCIMemoItem.m */,
+				92515C9A1DB71B8C007B24E5 /* TCAVIMMIManager.h */,
+				92515C9B1DB71B8C007B24E5 /* TCAVIMMIManager.m */,
+			);
+			path = ILiveSDK;
+			sourceTree = "<group>";
+		};
+		92B0ECB61DAB6CA4001BA2F8 /* AVOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				92B0ECB71DAB6CA4001BA2F8 /* AVFrameDispatcher.m */,
+				92B0ECB81DAB6CA4001BA2F8 /* AVGLBaseView.m */,
+				92B0ECB91DAB6CA4001BA2F8 /* AVGLCommon.m */,
+				92B0ECBA1DAB6CA4001BA2F8 /* AVGLCustomRenderView.m */,
+				92B0ECBB1DAB6CA4001BA2F8 /* AVGLImage.m */,
+				92B0ECBC1DAB6CA4001BA2F8 /* AVGLRenderView+Animation.m */,
+				92B0ECBD1DAB6CA4001BA2F8 /* AVGLRenderView.mm */,
+				92B0ECBE1DAB6CA4001BA2F8 /* AVGLShareInstance.m */,
+				92B0ECBF1DAB6CA4001BA2F8 /* TCAVFrameDispatcher.m */,
+			);
+			path = AVOpenGL;
+			sourceTree = "<group>";
+		};
+		92B0ECC01DAB6CA4001BA2F8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				92BDAB1B1DB4A929004C379E /* TCILivePushRequest.h */,
+				92BDAB1C1DB4A929004C379E /* TCILiveRecordRequest.h */,
+				92796EA21DAE31A900FAFA13 /* TCILAVIMCache.h */,
+				92C7F5401DAB7B7500112C9E /* ILiveSDKVersion.h */,
+				92B0ECC11DAB6CA4001BA2F8 /* AVFrameDispatcher.h */,
+				92B0ECC21DAB6CA4001BA2F8 /* AVGLBaseView.h */,
+				92B0ECC31DAB6CA4001BA2F8 /* AVGLCommon.h */,
+				92B0ECC41DAB6CA4001BA2F8 /* AVGLCustomRenderView.h */,
+				92B0ECC51DAB6CA4001BA2F8 /* AVGLImage.h */,
+				92B0ECC61DAB6CA4001BA2F8 /* AVGLRenderView+Animation.h */,
+				92B0ECC71DAB6CA4001BA2F8 /* AVGLRenderView.h */,
+				92B0ECC81DAB6CA4001BA2F8 /* AVGLShareInstance.h */,
+				92B0ECC91DAB6CA4001BA2F8 /* AVOpenGLHeader.h */,
+				92B0ECCC1DAB6CA4001BA2F8 /* TCAVFrameDispatcher.h */,
+				92B0ECCD1DAB6CA4001BA2F8 /* TCAVSharedContext.h */,
+				92B0ECCE1DAB6CA4001BA2F8 /* TCICallCMD.h */,
+				92B0ECD01DAB6CA4001BA2F8 /* TCICallManager.h */,
+				92B0ECD11DAB6CA4001BA2F8 /* TCILAVIMRunloop.h */,
+				92B0ECD21DAB6CA4001BA2F8 /* TCILiveConst.h */,
+				92B0ECD31DAB6CA4001BA2F8 /* TCILiveHeader.h */,
+				92B0ECD41DAB6CA4001BA2F8 /* TCILiveManager.h */,
+				92B0ECD51DAB6CA4001BA2F8 /* TCILiveManagerDelegate.h */,
+				92B0ECD61DAB6CA4001BA2F8 /* TCILiveMsg.h */,
+				92B0ECD71DAB6CA4001BA2F8 /* TCILiveMsgHandler.h */,
+				92B0ECD81DAB6CA4001BA2F8 /* TCILiveRoom.h */,
+				92B0ECD91DAB6CA4001BA2F8 /* TCIMemoItem.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92B0ECA91DAB6C6F001BA2F8 /* ILiveSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92B0ECB31DAB6C6F001BA2F8 /* Build configuration list for PBXNativeTarget "ILiveSDK" */;
+			buildPhases = (
+				92B0ECA61DAB6C6F001BA2F8 /* Sources */,
+				92B0ECA71DAB6C6F001BA2F8 /* Frameworks */,
+				92B0ECA81DAB6C6F001BA2F8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ILiveSDK;
+			productName = ILiveSDK;
+			productReference = 92B0ECAA1DAB6C6F001BA2F8 /* libILiveSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92B0ECA21DAB6C6F001BA2F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = AlexiChen;
+				TargetAttributes = {
+					92B0ECA91DAB6C6F001BA2F8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 43YJ58H38Q;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 92B0ECA51DAB6C6F001BA2F8 /* Build configuration list for PBXProject "ILiveSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 92B0ECA11DAB6C6F001BA2F8;
+			productRefGroup = 92B0ECAB1DAB6C6F001BA2F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92B0ECA91DAB6C6F001BA2F8 /* ILiveSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92B0ECA61DAB6C6F001BA2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B0ECFD1DAB6CA4001BA2F8 /* TCAVFrameDispatcher.m in Sources */,
+				92B0ED0D1DAB6CA4001BA2F8 /* TCILiveMsgHandler.m in Sources */,
+				92B0ED0E1DAB6CA4001BA2F8 /* TCILivePushRequest.m in Sources */,
+				92515C9C1DB71B8C007B24E5 /* TCAVIMMIManager.m in Sources */,
+				92B0ECFC1DAB6CA4001BA2F8 /* AVGLShareInstance.m in Sources */,
+				92B0ED091DAB6CA4001BA2F8 /* TCILAVIMCache.m in Sources */,
+				92B0ED101DAB6CA4001BA2F8 /* TCILiveRoom.m in Sources */,
+				92B0ED061DAB6CA4001BA2F8 /* TCAVSharedContext.m in Sources */,
+				92B0ECF51DAB6CA4001BA2F8 /* AVFrameDispatcher.m in Sources */,
+				92B0ED0B1DAB6CA4001BA2F8 /* TCILiveManager.m in Sources */,
+				92B0ED0F1DAB6CA4001BA2F8 /* TCILiveRecordRequest.m in Sources */,
+				92B0ECFB1DAB6CA4001BA2F8 /* AVGLRenderView.mm in Sources */,
+				92B0ED0C1DAB6CA4001BA2F8 /* TCILiveMsg.m in Sources */,
+				92B0ECF81DAB6CA4001BA2F8 /* AVGLCustomRenderView.m in Sources */,
+				92B0ED081DAB6CA4001BA2F8 /* TCICallManager.m in Sources */,
+				92B0ED071DAB6CA4001BA2F8 /* TCICallCMD.m in Sources */,
+				92B0ECF71DAB6CA4001BA2F8 /* AVGLCommon.m in Sources */,
+				92B0ED0A1DAB6CA4001BA2F8 /* TCILAVIMRunloop.m in Sources */,
+				92B0ECFA1DAB6CA4001BA2F8 /* AVGLRenderView+Animation.m in Sources */,
+				92B0ED111DAB6CA4001BA2F8 /* TCIMemoItem.m in Sources */,
+				92B0ECF61DAB6CA4001BA2F8 /* AVGLBaseView.m in Sources */,
+				92AF3E211DACD0240013EC7E /* README.md in Sources */,
+				92B0ECF91DAB6CA4001BA2F8 /* AVGLImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		92B0ECB11DAB6C6F001BA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92B0ECB21DAB6C6F001BA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92B0ECB41DAB6C6F001BA2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 43YJ58H38Q;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ILiveSDK/TCAVIMSDKS/AVSDK",
+					"$(PROJECT_DIR)/ILiveSDK/TCAVIMSDKS/IMSDK",
+					"$(PROJECT_DIR)/TCAVIMSDKS/AVSDK",
+					"$(PROJECT_DIR)/TCAVIMSDKS/IMSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		92B0ECB51DAB6C6F001BA2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 43YJ58H38Q;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ILiveSDK/TCAVIMSDKS/AVSDK",
+					"$(PROJECT_DIR)/ILiveSDK/TCAVIMSDKS/IMSDK",
+					"$(PROJECT_DIR)/TCAVIMSDKS/AVSDK",
+					"$(PROJECT_DIR)/TCAVIMSDKS/IMSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92B0ECA51DAB6C6F001BA2F8 /* Build configuration list for PBXProject "ILiveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B0ECB11DAB6C6F001BA2F8 /* Debug */,
+				92B0ECB21DAB6C6F001BA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92B0ECB31DAB6C6F001BA2F8 /* Build configuration list for PBXNativeTarget "ILiveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B0ECB41DAB6C6F001BA2F8 /* Debug */,
+				92B0ECB51DAB6C6F001BA2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92B0ECA21DAB6C6F001BA2F8 /* Project object */;
+}
